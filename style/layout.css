@@ -1,0 +1,200 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+	.fifty{
+		width: 49.5%;
+		display: inline-table;
+	}
+	body {
+		background-color: black;
+		color: white;
+	}
+	header{
+        margin-top: 5px;
+    }
+    .sixteen.columns>header> span
+    {
+        display: inline-block;
+        text-align: right;
+        /*padding-right: 25px;*/
+        padding-top: 5px;
+        font-family: Playball;
+        font-size: 25px;
+    }
+	#set{
+		padding-right: 25px;
+	}
+	div#menu{
+		position: block;
+		background-color: white;
+		color: black;
+		font-family: "Times New Roman";
+	}
+	input{
+		min-width: 40px;
+	}
+	.color, form > div > input,select,label,textarea{
+		margin-left: 25px;
+		margin-bottom: 0;
+		font-size: 15px;
+	}
+	label{
+		margin: 5px 0 5px 25px;
+	}
+	div#menu .title{
+		padding-left: 15px;
+		padding-top: 5px;
+	}
+	#layer{
+		position: fixed;
+		display: none;
+		width: 100%;
+		height: 100%;
+		left:0;
+		background-color: white;
+		overflow:scroll;
+	}
+	.underline{
+		text-decoration: underline;
+	}
+	.italic{
+		font-style: italic;
+	}
+	.bold{
+		font-weight: bold;
+	}
+	.overline{
+		text-decoration: overline;
+		text-decoration: line-through;
+	}
+	.linetru{
+		text-decoration: line-through;
+	}
+
+	/* Make it a marquee */
+	.sixteen.columns.marquee {
+	    margin: 0 auto;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    box-sizing: border-box;
+	    width: 100%;
+	    display: table;
+	}
+
+	.marquee span {
+	    display: table-cell;
+	    padding-left: 100%;
+	    vertical-align: middle;
+	    text-indent: 0;
+	    animation: marquee 15s linear infinite;
+	    font-size: 130px;
+
+	}
+	header>span.beta{
+		font-size: 12px;
+	}
+
+	/* Make it move */
+	@keyframes marquee {
+	    0%   { transform: translate(0, 0); }
+	    100% { transform: translate(-200%, 0); }
+	}
+	#cancel{
+		margin-left: 580px;
+	}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		#cancel{
+			margin-left: 580px;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#cancel{
+			margin-left: 485px;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#cancel{
+			margin-left: 485px;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#cancel{
+			margin-left: 110px;
+		}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#cancel{
+			margin-left: 110px;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+	@font-face {
+		font-family: Bangers;
+		src: url('../fonts/Bangers/Bangers.ttf') format("opentype"); /* IE9+ */
+	}
+	@font-face {
+		font-family: Lemon;
+		src: url('../fonts/Lemon/Lemon-Regular.ttf') format("opentype"); /* IE9+ */
+	}
+	@font-face {
+		font-family: Playball;
+		src: url('../fonts/Playball/Playball-Regular.ttf') format("opentype"); /* IE9+ */
+	}
+	@font-face {
+		font-family: Righteous;
+		src: url('../fonts/Righteous/Righteous-Regular.ttf') format("opentype"); /* IE9+ */
+	}
+	@font-face {
+		font-family: Varela;
+		src: url('../fonts/Varela/Varela-Regular.ttf') format("opentype"); /* IE9+ */
+	}
+	@font-face {
+		/*
+		AUTHOR:
+			-====-
+			Sizenko Alexander
+			Style-7
+			http://www.styleseven.com
+			Created: January 16 2013
+		*/
+		font-family: "Triple dot";
+		src: url('../fonts/triple_dot/triple_dot_digital-7.ttf') format("opentype"); /* IE9+ */
+	}
