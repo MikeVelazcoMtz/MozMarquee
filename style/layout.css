@@ -70,7 +70,8 @@
 			height: 100%;
 			left:0;
 			background-color: white;
-			overflow:scroll;
+			/*overflow:scroll;*/
+			overflow-y:scroll; 
 		}
 		.fifty{
 			width: 49.5%;
@@ -80,7 +81,10 @@
 			margin-left: 580px;
 		}
 	/*modal CSS*/
-	/*marquee CSS*/
+	/*marquee font-style CSS*/
+		.container{
+			overflow-x:hidden;
+		}
 		.underline{
 			text-decoration: underline;
 		}
@@ -97,7 +101,7 @@
 		.linetru{
 			text-decoration: line-through;
 		}
-	/*marquee CSS*/
+	/*marquee font-style CSS*/
 	/*marque animation CSS*/
 		/* Make it a marquee */
 		.sixteen.columns.marquee {
@@ -116,7 +120,7 @@
 		    text-indent: 0;
 		    animation: marquee 15s linear infinite;
 		    font-size: 130px;
-
+		    overflow-x:hidden:;
 		}
 		/* Make it move */
 		@keyframes marquee {
